@@ -3,12 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data analyst</title>
+    <title>Sivasankari G - Data Analyst</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-dL7lDYKG5Ng9gJZqU+5sUvFBLNwA8zAXdzX6b4vA/c3r9I2Eib5MZtOy+LRZpOQkxK29+H5oVvS9V5ddz9xewg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            nav ul.nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            #home {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .home-content {
+                margin-bottom: 20px;
+            }
+
+            .home-image img {
+                width: 80%;
+                height: auto;
+            }
+
+            .about .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .skills-container .row {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .projects {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .edu-exp-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .contact-details {
+                align-items: center;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .contact-item .icon {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Sivasankari G</h1>
-    <h2>Data Analyst</h2>
-    <img width="200px" src="My pic.jpg" alt="">
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+  
+    <!-- Toggle Script -->
+    <script>
+      function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('show');
+      }
+      </script>
+      
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <h1>Sivasankari G</h1>
+            <h5>Aspiring Data Analyst</h5>
+            <a href="#" class="resume-btn">Resume</a>
+        </div>
+        <div class="home-image">
+            <img src="My pic.jpg" alt="Sivasankari G">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="data.jpeg" alt="Profile Image">
+            </div>
+            <div class="about-text">
+                <h4>ABOUT ME</h4>
+                <p>
+                    I am a BE Computer Science graduate with a strong 
+                    foundation in data analytics, specializing in 
+                    SQL, Python, Power BI, and Excel. With hands-on 
+                    experience gained through 
+                    internships and projects, I am passionate 
+                    about transforming data into meaningful insights to 
+                    drive informed decision-making. I am seeking 
+                    opportunities to apply my analytical skills 
+                    in a dynamic environment and contribute to 
+                    data-driven solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>SKILLS</h2>
+        <div class="skills-container">
+            <div class="row">
+                <div class="skill"><img src="MySQL.png" alt="MySQL"></div>
+                <div class="skill"><img src="Python.png" alt="Python"></div>
+                <div class="skill"><img src="Power BI.png" alt="Power BI"></div>
+                <div class="skill"><img src="Excel.jpg" alt="Excel"></div>
+            </div>
+            <div class="row">
+                <div class="skill"><img src="Pandas.png" alt="Pandas"></div>
+                <div class="skill"><img src="Numpy.png" alt="Numpy"></div>
+                <div class="skill"><img src="Matplotlib.png" alt="Matplotlib"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="experience-container">
+            <div class="experience-card">
+                <h2>Experience</h2>
+                <h3>Data Analyst Intern(Remote)</h3>
+                <h4>Vetri IT systems Pvt Ltd, Tamil Nadu | April 2025 - Present</h4>
+                <ul>
+                    <li>Cleaned large datasets using SQL and Python, identifying key trends and patterns, which improved data-driven decision-making by 30%.</li>
+                    <li>Built 5+ interactive dashboards in Power BI using DAX calculations and KPIs, increasing stakeholder reporting clarity by 20%.</li>
+                    <li>Applied advanced Excel functions (PivotTables, XLOOKUP, INDEX-MATCH, conditional formatting) to streamline data workflows, reducing report turnaround time by 30%.</li>
+                    <li>Collaborated on a project to streamline data collection processes, reducing data processing time by 25%.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <img src="project 1.png">
+                <h3>Diwali Sales Analysis</h3>
+                <p>Analyzed festive sales data using Python to uncover customer trends and boost sales strategy.</p>
+                <a href="https://github.com/DatadrivenSiva/Diwali-sales-analysis.git" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <img src="project 2.jpg">
+                <h3>Retail Sales Analysis (SQL)</h3>
+                <p>Explored retail transactions using SQL to identify sales patterns and customer insights.</p>
+                <a href="https://github.com/DatadrivenSiva/Retail-Sales-analysis.git" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="edu-exp-section">
+        <div class="edu-exp-container">
+          <div class="edu-column">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <p class="year">2017 - 2021</p>
+                <h3 class="degree">Bachelor of Engineering - Computer Science</h3>
+                <p class="institute">PSR Engineering College, Sivakasi</p>
+              </div>
+              <div class="timeline-item">
+                <p class="year">2016 - 2017</p>
+                <h3 class="degree">XII Standard</h3>
+                <p class="institute">VNUAPT Matric Higher Secondary school</p>
+              </div>
+              <div class="timeline-item">
+                <p class="year">2014 - 2015</p>
+                <h3 class="degree">X Standard</h3>
+                <p class="institute">VNUAPT Matric Higher Secondary school</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-column">
+            <h2 class="section-title">Courses & Certifications</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <p class="year">Sep 2024 - Feb 2025</p>
+                <h3 class="degree">Data Analytics Course</h3>
+                <p class="institute">Besant Technologies, Bangalore</p>
+                <a href="https://drive.google.com/file/d/1fATWTTOMc3tL48QyZzX8wFg5KPFVwqfF/view?usp=sharing" target="_blank">View Certificate</a>
+              </div>
+              <div class="timeline-item">
+                <p class="year">May 2023</p>
+                <h3 class="degree">Data Analytics Certificate – Coursera</h3>
+                <p class="institute">Google</p>
+                <a href="https://drive.google.com/file/d/1a8qSLHg9CFjEzjKIuWafbULYuGWNurHB/view?usp=sharing" target="_blank">View Certificate</a>
+              </div>
+              <div class="timeline-item">
+                <p class="year">Feb 2024</p>
+                <h3 class="degree">SQL for Data Analytics</h3>
+                <p class="institute">CISCO</p>
+                <a href="https://drive.google.com/file/d/1FQi6b4H5tfRIqtJZWnNUhjR_kSzcBCWn/view?usp=sharing" target="_blank">View Certificate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+          <!-- Left: Big Title -->
+          <div class="contact-title">CONTACT ME</div>
+
+          <!-- Vertical Line -->
+          <div class="divider"></div>
+          <div class="divider"></div>
+
+          <!-- Right: Contact Details -->
+          <div class="contact-details">
+            <!-- Address -->
+            <div class="contact-item">
+              <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" alt="Address Icon" class="icon">
+              <div>
+                <strong>Address</strong> // Bangalore, Karnataka
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item">
+              <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone Icon" class="icon">
+              <div>
+                <strong>Phone No.</strong> // <a href="tel:+916381691383">+91 6381691383</a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item">
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" class="icon">
+              <div>
+                <strong>E-Mail</strong> // <a href="mailto:sivasankari845@gmail.com">sivasankari845@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-item">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon" class="icon">
+              <div>
+                <strong>LinkedIn</strong> // <a href="https://www.linkedin.com/in/sivasankari--g" target="_blank">linkedin.com/in/sivasankari--g</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
 
 </body>
 </html>
